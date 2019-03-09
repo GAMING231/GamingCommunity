@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{6CC92EE2-C97E-2137-C111-F092707B90B5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DoorOpenDevice.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Shoot.cs">
     <Files>
-      <File FileName="Assets/Scripts/Spin.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Shoot.cs" Line="19" Column="18" />
-      <File FileName="Assets/Scripts/WanderingAI.cs" Line="9" Column="39" />
-      <File FileName="Assets/Scripts/ReactiveTarget.cs" Line="9" Column="9" />
-      <File FileName="Assets/Scripts/PlayerCharacter.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/DeviceOperator.cs" Line="11" Column="9" />
-      <File FileName="Assets/Scripts/DoorOpenDevice.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/DeviceTrigger.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/PlayerCharacter.cs" Line="13" Column="21" />
+      <File FileName="Assets/Scripts/ButtonScript.cs" Line="23" Column="37" />
+      <File FileName="Assets/Scripts/BackAndForth.cs" Line="21" Column="14" />
+      <File FileName="Assets/Scripts/CollectibleItem.cs" Line="12" Column="17" />
+      <File FileName="Assets/Scripts/Shoot.cs" Line="13" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +14,7 @@
           <Node name="FPS" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DoorOpenDevice.cs" selected="True" />
+                <Node name="Shoot.cs" selected="True" />
               </Node>
             </Node>
           </Node>

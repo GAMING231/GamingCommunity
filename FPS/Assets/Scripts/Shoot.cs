@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;//подключение бибилиотеки для UI-системы 
 
 public class Shoot : MonoBehaviour {
 
@@ -10,8 +9,8 @@ public class Shoot : MonoBehaviour {
     void Start()
     {
         _camera = GetComponent<Camera>();//Доступ к компонентам
-        Cursor.lockState = CursorLockMode.Locked;//блокировка курсора
-        Cursor.visible = false; //скрываем указатель мыши
+       Cursor.lockState = CursorLockMode.Locked;//блокировка курсора
+       Cursor.visible = false; //скрываем указатель мыши
 
     }
 
@@ -27,8 +26,8 @@ public class Shoot : MonoBehaviour {
             {    //луч заполняет информацией переменную
                 Debug.Log("Hit " + hit.point);//загружаем координаты точки, в которую луч попал
                 StartCoroutine(SphereIndicator(hit.point));//Запуск сопрограммы в ответ на попадание
-                GameObject hitOnject = hit.transform.gameObject;//Получаем объект, в который попал луч
-                ReactiveTarget target = hitOnject.GetComponent<ReactiveTarget>();
+                GameObject hitObject = hit.transform.gameObject;//Получаем объект, в который попал луч
+                ReactiveTarget target = hitObject.GetComponent<ReactiveTarget>();
                 if (target != null)
                 { //проверяем у этого объекта компонента ReactiveTarget
                     target.ReactToHit();
