@@ -9,7 +9,14 @@ public class CollectibleItem : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Item collected: " + itemName);
-        Destroy(gameObject);
-
+        Destroy(this.gameObject);
+        if (itemName == "health")
+        {//проверяем, является ли объект здоровьем
+            PlayerCharacter player = other.GetComponent<PlayerCharacter>();
+            if (player != null)
+            {//проверяем, является ли объект PlayerCharacter
+                player.ChangeHealth(20);
+            }
+        }
     }
 }
